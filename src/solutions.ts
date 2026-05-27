@@ -14,13 +14,39 @@
 // console.log(result)
 
 
-function reverseString (input:string){
-    let reverseLetter:string = "";
+// function reverseString (input:string){
+//     let reverseLetter:string = "";
 
-    for(let i=input.length-1;i>=0;i--){
-       reverseLetter = reverseLetter + input[i]
-    }
-    return reverseLetter;
+//     for(let i=input.length-1;i>=0;i--){
+//        reverseLetter = reverseLetter + input[i]
+//     }
+//     return reverseLetter;
+// }
+//  const result = reverseString("abcdefg")
+//  console.log(result)
+
+//  function checkType (input: string | number){
+//     if(typeof input === "number" ){
+//         return "Number"
+//     }
+//     else{
+//         return "String"
+//     }
+
+//  }
+
+//  const result = checkType(23)
+//  console.log(result)
+
+
+function getProperty<T, K extends keyof T>(obj: T, key: K){
+    return obj[key];
 }
- const result = reverseString("abcdefg")
+
+ const user = { id: 1, name: "John Doe", age: 21 };
+
+ const result = getProperty(user, "age");
  console.log(result)
+
+
+ 
