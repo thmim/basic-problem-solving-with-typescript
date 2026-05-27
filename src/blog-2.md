@@ -46,14 +46,14 @@ class Animal {
     }
 }
 
-// কুকুর ডাকলে হবে ঘেউ ঘেউ
+কুকুর ডাকলে হবে ঘেউ ঘেউ
 class Dog extends Animal {
     makeSound() {
         console.log("ঘেউ ঘেউ!");
     }
 }
 
-// বিড়াল ডাকলে হবে মিউ মিউ
+বিড়াল ডাকলে হবে মিউ মিউ
 class Cat extends Animal {
     makeSound() {
         console.log("মিউ মিউ!");
